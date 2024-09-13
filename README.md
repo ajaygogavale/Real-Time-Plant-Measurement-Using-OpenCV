@@ -1,4 +1,4 @@
-# plant_height_width_measure
+#  Real-Time Plant Measurement Using OpenCV
 To measure the real height and width of an object using OpenCV in Python, 
 We follow several steps;
 1)Convert the image to grayscale and apply Gaussian Blur to reduce noise.
