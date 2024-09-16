@@ -27,9 +27,9 @@ _,thr=cv2.threshold(edge,50,255,cv2.THRESH_BINARY)
 c,h=cv2.findContours(thr,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
 new_img=cv2.drawContours(roi_img,c,-1,(255,0,0),2)
 
-# Assuming you have calculated these values
-roi_width_pixels = 255  # Example width of ROI in pixels
-roi_height_pixels = 415  # Example height of ROI in pixels
+# Assuming these values are correct for your setup
+roi_width_pixels = roi_img.shape[1]  # Width of ROI in pixels
+roi_height_pixels = roi_img.shape[0]  # Height of ROI in pixels
 pixel_to_cm = 0.1  # Example conversion factor (0.1 cm per pixel)
 
 # Convert pixel dimensions to cm
