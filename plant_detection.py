@@ -37,8 +37,8 @@ pixel_to_cm = 0.1  # Example conversion factor (0.1 cm per pixel)
 roi_width_cm = roi_width_pixels * pixel_to_cm
 roi_height_cm = roi_height_pixels * pixel_to_cm
 
-print(f"ROI width: {roi_width_cm:.2f} cm")
-print(f"ROI height: {roi_height_cm:.2f} cm")
+print(f"Object width: {roi_width_cm:.2f} cm")
+print(f"Object height: {roi_height_cm:.2f} cm")
 
 # Display images
 cv2.imshow("original",img)
